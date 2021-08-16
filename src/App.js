@@ -5,8 +5,8 @@ import { Wheel } from 'react-custom-roulette'
 import Button from '@material-ui/core/Button';
 
 const data = [
-  { option: '?איזה מפקד אתה' ,style: { textColor: '#ffffff' }},
-  { option: '?איך אתה מרגיש' ,style: { textColor: '#ffffff' }},
+  { option: '?איזה מפקד את/ה' ,style: { textColor: '#ffffff' }},
+  { option: '?איך את/ה מרגיש/ה' ,style: { textColor: '#ffffff' }},
   { option: '?למה יצאת לקצונה', style: { textColor: '#ffffff' } },
   { option: '?מה החלומות שלך' ,style: { textColor: '#ffffff' }},
 ];
