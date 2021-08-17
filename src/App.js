@@ -5,7 +5,7 @@ import { Wheel } from 'react-custom-roulette'
 import Button from '@material-ui/core/Button';
 
 const data = [
-  { option: '?איזה מפקד את/ה' ,style: { textColor: '#ffffff' }},
+  { option: '?איזה מפקד/ת את/ה' ,style: { textColor: '#ffffff' }},
   { option: '?איך את/ה מרגיש/ה' ,style: { textColor: '#ffffff' }},
   { option: '?למה יצאת לקצונה', style: { textColor: '#ffffff' } },
   { option: '?מה החלומות שלך' ,style: { textColor: '#ffffff' }},
@@ -136,7 +136,7 @@ const App = () => {
     onClick={handleSpinClick2}>
           SPIN
         </Button>
-        <Wheel
+        <Wheel 
           mustStartSpinning={mustSpin}
           prizeNumber={prizeNumber}
           data={data}
