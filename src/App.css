@@ -46,14 +46,20 @@
   align-items: center;
 }
 
-/* Responsive layout - makes a one column layout instead of a two-column layout */
+.flex-item-left {
+  flex: 50%;
+}
+
+.flex-item-right {
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
   }
 }
-
-
 
 .App-link {
   color: #61dafb;

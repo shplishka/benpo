@@ -103,12 +103,11 @@ const App = () => {
     setWinName(names[newPrizeNumber].option)
   }
   return (
-    <div className="App">
-           <h1 className="App-header-2">
-    דייט"ש - פלוגת שיאון</h1>
-      <div className="flex-container">
-        <div>
-  <Wheel
+  <div className="App">
+    <h1 className="App-header-2"> דייט"ש - פלוגת שיאון</h1>
+    <div className="flex-container">
+      <div className="flex-item-left ">
+        <Wheel
           mustStartSpinning={mustSpin2}
           prizeNumber={prizeNumber2}
           data={names}
@@ -124,19 +123,20 @@ const App = () => {
           radiusLineWidth={radiusLineWidth2}
           // perpendicularText
           textDistance={textDistance}
-
           onStopSpinning={() => {
             setMustSpin2(false)
           }}
         />
-        <Button variant="contained"     style={{
+        <Button variant="contained"  style={{
         backgroundColor: "#21b6ae",
         fontSize: "18px"
-    }} href="#contained-buttons"
-    onClick={handleSpinClick2}>
+        }} href="#contained-buttons"
+        onClick={handleSpinClick2}>
           SPIN
         </Button>
-        <Wheel 
+    </div>
+      <div className = "flex-item-right">
+        <Wheel
           mustStartSpinning={mustSpin}
           prizeNumber={prizeNumber}
           data={data}
@@ -160,20 +160,14 @@ const App = () => {
         <Button variant="contained"  style={{
         backgroundColor: "#21b6ae",
         fontSize: "18px"
-    }} href="#contained-buttons" onClick={handleSpinClick}>
+        }} href="#contained-buttons" onClick={handleSpinClick}>
           SPIN
         </Button>
-        </div>
-        <div>
-        </div>
-        </div>
-      <header className="App-header-2">
-      {winName}
-      </header>
-      <header className="App-header-2">
-      {winQuestion}
-      </header>
     </div>
+    </div>
+    <header className="App-header-2">{winName}</header>
+    <header className="App-header-2">{winQuestion}</header>
+  </div>
   );
 }
 
